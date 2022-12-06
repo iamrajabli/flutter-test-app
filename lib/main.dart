@@ -1,7 +1,4 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,18 +38,22 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-        body: Container(
+        body: Center(
+            child: Container(
+          alignment: Alignment.center,
+          width: 300,
+          height: 100,
           color: const Color.fromRGBO(0, 107, 112, 1),
-          margin: const EdgeInsets.all(15),
+          // margin: const EdgeInsets.all(15),
           // const EdgeInsets.only(top: 10, left: 10, right: 10, bottom: 10),
           // const EdgeInsets.fromLTRB(10, 10, 10, 10),
-          padding: const EdgeInsets.all(8),
+          // padding: const EdgeInsets.all(8),
           child: const Text(
             "Alphadev Software",
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.white, fontSize: 24),
           ),
-        ),
+        )),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
           backgroundColor: const Color.fromRGBO(0, 107, 112, 1),
